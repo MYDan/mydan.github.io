@@ -1,0 +1,1280 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>go · MYDan(mydan.org蚂蚁蛋运维助手)</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-versions-select/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ad/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-terminal/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="range.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-chart/c3/c3.min.css">
+    <script src="../gitbook/gitbook-plugin-chart/c3/d3.min.js"></script>
+    <script src="../gitbook/gitbook-plugin-chart/c3/c3.min.js"></script>
+    
+
+    
+        <link rel="shortcut icon" href='../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../assets/images/favicon.ico'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/images/favicon.ico">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon.ico">
+        
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"MYDan","type":"follow","size":"small","width":"180","count":true},{"user":"MYDan","repo":"mayi","type":"star","size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.mydan.org" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../quick_install/">
+            
+                <a href="../quick_install/">
+            
+                    
+                    快速安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../usage/">
+            
+                <a href="../usage/">
+            
+                    
+                    使用手册
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../usage/getting-started.html">
+            
+                <a href="../usage/getting-started.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../usage/node.html">
+            
+                <a href="../usage/node.html">
+            
+                    
+                    机器管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../usage/tools.html">
+            
+                <a href="../usage/tools.html">
+            
+                    
+                    核心工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../usage/proxy.html">
+            
+                <a href="../usage/proxy.html">
+            
+                    
+                    网络代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../usage/deploy.html">
+            
+                <a href="../usage/deploy.html">
+            
+                    
+                    发布平台
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../deploy/project.html">
+            
+                <a href="../deploy/project.html">
+            
+                    
+                    应用操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../deploy/deploy.html">
+            
+                <a href="../deploy/deploy.html">
+            
+                    
+                    发布管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../usage/monitor.html">
+            
+                <a href="../usage/monitor.html">
+            
+                    
+                    监控平台
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../monitor/collector.html">
+            
+                <a href="../monitor/collector.html">
+            
+                    
+                    监控管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../monitor/subscribe.html">
+            
+                <a href="../monitor/subscribe.html">
+            
+                    
+                    订阅管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="../monitor/oncall.html">
+            
+                <a href="../monitor/oncall.html">
+            
+                    
+                    值班管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.4" data-path="../monitor/notify.html">
+            
+                <a href="../monitor/notify.html">
+            
+                    
+                    报警接入
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../usage/access.html">
+            
+                <a href="../usage/access.html">
+            
+                    
+                    访问管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1" data-path="../access/dashboard.html">
+            
+                <a href="../access/dashboard.html">
+            
+                    
+                    dashboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.2" data-path="../access/sso.html">
+            
+                <a href="../access/sso.html">
+            
+                    
+                    sso
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../usage/code.html">
+            
+                <a href="../usage/code.html">
+            
+                    
+                    仓库管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../philosophy/">
+            
+                <a href="../philosophy/">
+            
+                    
+                    设计理念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    工具详解
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="go.html">
+            
+                <a href="go.html">
+            
+                    
+                    go
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="range.html">
+            
+                <a href="range.html">
+            
+                    
+                    range
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="whois.html">
+            
+                <a href="whois.html">
+            
+                    
+                    whois
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="gateway.html">
+            
+                <a href="gateway.html">
+            
+                    
+                    gateway
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="rcall.html">
+            
+                <a href="rcall.html">
+            
+                    
+                    rcall
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="rtail.html">
+            
+                <a href="rtail.html">
+            
+                    
+                    rtail
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="vssh.html">
+            
+                <a href="vssh.html">
+            
+                    
+                    vssh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="mssh.html">
+            
+                <a href="mssh.html">
+            
+                    
+                    mssh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="mcmd.html">
+            
+                <a href="mcmd.html">
+            
+                    
+                    mcmd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="load.html">
+            
+                <a href="load.html">
+            
+                    
+                    load
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="rsync.html">
+            
+                <a href="rsync.html">
+            
+                    
+                    rsync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="mrsync.html">
+            
+                <a href="mrsync.html">
+            
+                    
+                    mrsync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="grsync.html">
+            
+                <a href="grsync.html">
+            
+                    
+                    grsync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="access.html">
+            
+                <a href="access.html">
+            
+                    
+                    access
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" data-path="keys.html">
+            
+                <a href="keys.html">
+            
+                    
+                    keys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.17" data-path="shell.html">
+            
+                <a href="shell.html">
+            
+                    
+                    shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.18" data-path="shellv2.html">
+            
+                <a href="shellv2.html">
+            
+                    
+                    shellv2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.19" data-path="alias.html">
+            
+                <a href="alias.html">
+            
+                    
+                    alias
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.20" data-path="unalias.html">
+            
+                <a href="unalias.html">
+            
+                    
+                    unalias
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.21" data-path="fastmd5.html">
+            
+                <a href="fastmd5.html">
+            
+                    
+                    fastmd5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.22" data-path="sync.html">
+            
+                <a href="sync.html">
+            
+                    
+                    sync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.23" data-path="xtar.html">
+            
+                <a href="xtar.html">
+            
+                    
+                    xtar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.24" data-path="git.html">
+            
+                <a href="git.html">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.25" data-path="alarm.html">
+            
+                <a href="alarm.html">
+            
+                    
+                    alarm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.26" data-path="bigest.html">
+            
+                <a href="bigest.html">
+            
+                    
+                    bigest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.27" data-path="expect.html">
+            
+                <a href="expect.html">
+            
+                    
+                    expect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.28" data-path="release.html">
+            
+                <a href="release.html">
+            
+                    
+                    release
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.29" data-path="supervisor.html">
+            
+                <a href="supervisor.html">
+            
+                    
+                    supervisor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.30" data-path="tai64nlocal.html">
+            
+                <a href="tai64nlocal.html">
+            
+                    
+                    tai64nlocal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.31" data-path="diagnosis.html">
+            
+                <a href="diagnosis.html">
+            
+                    
+                    diagnosis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.32" data-path="tcpserver.html">
+            
+                <a href="tcpserver.html">
+            
+                    
+                    tcpserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.33" data-path="deploy.html">
+            
+                <a href="deploy.html">
+            
+                    
+                    deploy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.34" data-path="check.html">
+            
+                <a href="check.html">
+            
+                    
+                    check
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.35" data-path="secure.html">
+            
+                <a href="secure.html">
+            
+                    
+                    secure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.36" data-path="diskSpaceControl.html">
+            
+                <a href="diskSpaceControl.html">
+            
+                    
+                    diskSpaceControl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.37" data-path="node.html">
+            
+                <a href="node.html">
+            
+                    
+                    node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.38" data-path="code.html">
+            
+                <a href="code.html">
+            
+                    
+                    code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.39" data-path="checkuser.html">
+            
+                <a href="checkuser.html">
+            
+                    
+                    checkuser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.40" data-path="reborn.html">
+            
+                <a href="reborn.html">
+            
+                    
+                    reborn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.41" data-path="os.html">
+            
+                <a href="os.html">
+            
+                    
+                    os
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../faq/window.html">
+            
+                <a href="../faq/window.html">
+            
+                    
+                    window下安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >go</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#mydan-go"><b>1. </b>mydan go</a></li><ul><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;&#x6587;&#x4EF6;1"><b>1.1. </b>&#x914D;&#x7F6E;&#x6587;&#x4EF6;1</a></li><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;&#x6587;&#x4EF6;2"><b>1.2. </b>&#x914D;&#x7F6E;&#x6587;&#x4EF6;2</a></li></ul></ul></div><a href="#mydan-go" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="mydan-go"><a name="mydan-go" class="anchor-navigation-ex-anchor" href="#mydan-go"><i class="fa fa-link" aria-hidden="true"></i></a>1. mydan go</h1>
+<pre><code>[root@feng-pc ~]# mydan go
+SYNOPSIS
+     $0 host [user]
+     $0 --user dan host [user]
+</code></pre><blockquote>
+<ul>
+<li>&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x5FEB;&#x6377;&#x767B;&#x5F55;&#x673A;&#x5668;</li>
+<li>mydan g &#x548C; mydan go &#x4E24;&#x4E2A;&#x547D;&#x4EE4;&#x7B49;&#x540C;</li>
+</ul>
+</blockquote>
+<h2 id="&#x914D;&#x7F6E;&#x6587;&#x4EF6;1"><a name="&#x914D;&#x7F6E;&#x6587;&#x4EF6;1" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x6587;&#x4EF6;1"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x914D;&#x7F6E;&#x6587;&#x4EF6;1</h2>
+<pre><code>root@feng-pc:~# cat /opt/mydan/etc/util/conf/pass
+#localhost{1~100}:
+#  user1: &quot;passwd1&quot;
+#  user2: &quot;passwd2&quot;
+#node1:
+#  uu: pp
+#  default: ppp
+#default:
+#  u1: p1
+#  default: p
+</code></pre><blockquote>
+<ul>
+<li>&#x767B;&#x5F55;&#x65B9;&#x5F0F;: mydan go foo &#xFF0C; &#x5176;&#x4E2D;foo&#x4E3A;&#x673A;&#x5668;&#x540D;&#x3001;ip&#xFF0C;&#x6216;&#x8005;&#x662F;node&#x7BA1;&#x7406;&#x4E2D;&#x7684;&#x673A;&#x5668;&#x5217;&#x8868;&#x7684;&#x90E8;&#x5206;&#x5185;&#x5BB9;</li>
+<li>&#x7528;&#x4E8E;&#x767B;&#x5F55;node&#x7BA1;&#x7406;&#x4E2D;&#x7684;&#x673A;&#x5668;&#xFF0C;&#x6216;&#x8005;&#x6307;&#x5B9A;&#x673A;&#x5668;&#x540D;&#x6216;&#x8005;ip</li>
+<li>&#x53EF;&#x4EE5;&#x628A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6539;&#x540D;&#x6210; /opt/mydan/etc/util/conf/pass.private&#x907F;&#x514D;&#x66F4;&#x65B0;mydan&#x540E;&#x88AB;&#x8986;&#x76D6;</li>
+</ul>
+</blockquote>
+<h2 id="&#x914D;&#x7F6E;&#x6587;&#x4EF6;2"><a name="&#x914D;&#x7F6E;&#x6587;&#x4EF6;2" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x6587;&#x4EF6;2"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x914D;&#x7F6E;&#x6587;&#x4EF6;2</h2>
+<pre><code>root@feng-pc:~# cat   /opt/mydan/etc/util/conf/go
+---
+lijinfeng:mydan-slave:
+  expect:
+    assword: $ENV{PASSWD}
+    code: googlecode:$ENV{TOKEN}
+  go: ssh lijinfeng2011@gmail.com@op.mydan.org -t &quot;ssh -t -i ~/key work@{} sudo su -
+    root&quot;
+  range: mydan-slave-{1,2}
+lijinfeng:mydan-test:
+  expect:
+    assword: $ENV{PASSWD}
+    code: googlecode:$ENV{TOKEN}
+  go: ssh lijinfeng2011@gmail.com@op.mydan.org -t &quot;ssh -t -i ~/key work@{} sudo su -
+    root&quot;
+  range: mydan-test-0{1,2}
+</code></pre><blockquote>
+<ul>
+<li>&#x767B;&#x5F55;&#x65B9;&#x5F0F;: mydan go /foo &#xFF0C; &#x5176;&#x4E2D;foo&#x662F;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x7684;key</li>
+<li>&#x53EF;&#x4EE5;&#x628A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x540D;&#x6539;&#x540D;&#x6210;/opt/mydan/etc/util/conf/go.private&#xFF0C;&#x907F;&#x514D;mydan&#x66F4;&#x65B0;&#x540E;&#x88AB;&#x8986;&#x76D6;</li>
+<li>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; $ENV{ABC}&#x7684;&#x65B9;&#x5F0F;&#x5728;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;&#x53D8;&#x91CF;</li>
+<li>googlecode &#x4E3A;googlecode &#x9A8C;&#x8BC1;</li>
+</ul>
+</blockquote>
+<footer class="page-footer"><span class="copyright">Copyright 2017 - 2018. all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-07-16 18:11:39
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 工具详解">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="range.html" class="navigation navigation-next " aria-label="Next page: range">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"go","level":"1.5.1","depth":2,"next":{"title":"range","level":"1.5.2","depth":2,"path":"tools/range.md","ref":"tools/range.md","articles":[]},"previous":{"title":"工具详解","level":"1.5","depth":1,"path":"tools/README.md","ref":"tools/README.md","articles":[{"title":"go","level":"1.5.1","depth":2,"path":"tools/go.md","ref":"tools/go.md","articles":[]},{"title":"range","level":"1.5.2","depth":2,"path":"tools/range.md","ref":"tools/range.md","articles":[]},{"title":"whois","level":"1.5.3","depth":2,"path":"tools/whois.md","ref":"tools/whois.md","articles":[]},{"title":"gateway","level":"1.5.4","depth":2,"path":"tools/gateway.md","ref":"tools/gateway.md","articles":[]},{"title":"rcall","level":"1.5.5","depth":2,"path":"tools/rcall.md","ref":"tools/rcall.md","articles":[]},{"title":"rtail","level":"1.5.6","depth":2,"path":"tools/rtail.md","ref":"tools/rtail.md","articles":[]},{"title":"vssh","level":"1.5.7","depth":2,"path":"tools/vssh.md","ref":"tools/vssh.md","articles":[]},{"title":"mssh","level":"1.5.8","depth":2,"path":"tools/mssh.md","ref":"tools/mssh.md","articles":[]},{"title":"mcmd","level":"1.5.9","depth":2,"path":"tools/mcmd.md","ref":"tools/mcmd.md","articles":[]},{"title":"load","level":"1.5.10","depth":2,"path":"tools/load.md","ref":"tools/load.md","articles":[]},{"title":"rsync","level":"1.5.11","depth":2,"path":"tools/rsync.md","ref":"tools/rsync.md","articles":[]},{"title":"mrsync","level":"1.5.12","depth":2,"path":"tools/mrsync.md","ref":"tools/mrsync.md","articles":[]},{"title":"grsync","level":"1.5.13","depth":2,"path":"tools/grsync.md","ref":"tools/grsync.md","articles":[]},{"title":"access","level":"1.5.14","depth":2,"path":"tools/access.md","ref":"tools/access.md","articles":[]},{"title":"keys","level":"1.5.15","depth":2,"path":"tools/keys.md","ref":"tools/keys.md","articles":[]},{"title":"config","level":"1.5.16","depth":2,"path":"tools/config.md","ref":"tools/config.md","articles":[]},{"title":"shell","level":"1.5.17","depth":2,"path":"tools/shell.md","ref":"tools/shell.md","articles":[]},{"title":"shellv2","level":"1.5.18","depth":2,"path":"tools/shellv2.md","ref":"tools/shellv2.md","articles":[]},{"title":"alias","level":"1.5.19","depth":2,"path":"tools/alias.md","ref":"tools/alias.md","articles":[]},{"title":"unalias","level":"1.5.20","depth":2,"path":"tools/unalias.md","ref":"tools/unalias.md","articles":[]},{"title":"fastmd5","level":"1.5.21","depth":2,"path":"tools/fastmd5.md","ref":"tools/fastmd5.md","articles":[]},{"title":"sync","level":"1.5.22","depth":2,"path":"tools/sync.md","ref":"tools/sync.md","articles":[]},{"title":"xtar","level":"1.5.23","depth":2,"path":"tools/xtar.md","ref":"tools/xtar.md","articles":[]},{"title":"git","level":"1.5.24","depth":2,"path":"tools/git.md","ref":"tools/git.md","articles":[]},{"title":"alarm","level":"1.5.25","depth":2,"path":"tools/alarm.md","ref":"tools/alarm.md","articles":[]},{"title":"bigest","level":"1.5.26","depth":2,"path":"tools/bigest.md","ref":"tools/bigest.md","articles":[]},{"title":"expect","level":"1.5.27","depth":2,"path":"tools/expect.md","ref":"tools/expect.md","articles":[]},{"title":"release","level":"1.5.28","depth":2,"path":"tools/release.md","ref":"tools/release.md","articles":[]},{"title":"supervisor","level":"1.5.29","depth":2,"path":"tools/supervisor.md","ref":"tools/supervisor.md","articles":[]},{"title":"tai64nlocal","level":"1.5.30","depth":2,"path":"tools/tai64nlocal.md","ref":"tools/tai64nlocal.md","articles":[]},{"title":"diagnosis","level":"1.5.31","depth":2,"path":"tools/diagnosis.md","ref":"tools/diagnosis.md","articles":[]},{"title":"tcpserver","level":"1.5.32","depth":2,"path":"tools/tcpserver.md","ref":"tools/tcpserver.md","articles":[]},{"title":"deploy","level":"1.5.33","depth":2,"path":"tools/deploy.md","ref":"tools/deploy.md","articles":[]},{"title":"check","level":"1.5.34","depth":2,"path":"tools/check.md","ref":"tools/check.md","articles":[]},{"title":"secure","level":"1.5.35","depth":2,"path":"tools/secure.md","ref":"tools/secure.md","articles":[]},{"title":"diskSpaceControl","level":"1.5.36","depth":2,"path":"tools/diskSpaceControl.md","ref":"tools/diskSpaceControl.md","articles":[]},{"title":"node","level":"1.5.37","depth":2,"path":"tools/node.md","ref":"tools/node.md","articles":[]},{"title":"code","level":"1.5.38","depth":2,"path":"tools/code.md","ref":"tools/code.md","articles":[]},{"title":"checkuser","level":"1.5.39","depth":2,"path":"tools/checkuser.md","ref":"tools/checkuser.md","articles":[]},{"title":"reborn","level":"1.5.40","depth":2,"path":"tools/reborn.md","ref":"tools/reborn.md","articles":[]},{"title":"os","level":"1.5.41","depth":2,"path":"tools/os.md","ref":"tools/os.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","versions-select","splitter","tbfed-pagefooter","expandable-chapters-small","sectionx","github-buttons","simple-page-toc","anchors","todo","alerts","emphasize","anchor-navigation-ex","ad","ace","favicon","mermaid","terminal","github","copy-code-button","-sharing","sharing-plus","chart","mermaid"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright 2017 - 2018.","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"emphasize":{},"ad":{"contentBottom":"","contentTop":""},"ace":{},"github":{"url":"https://github.com/MYDan"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"mermaid":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"versions-select":{"type":"branches"},"fontsettings":{"theme":"white","family":"serif","size":1},"sectionx":{"tag":"b"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/assets/images/favicon.ico","bookmark":"/assets/images/favicon.ico","appleTouch":"/assets/images/favicon.ico","appleTouchMore":{"120x120":"/assets/images/favicon.ico","180x180":"/assets/images/favicon.ico"}},"alerts":{},"github-buttons":{"buttons":[{"user":"MYDan","type":"follow","size":"small","width":"180","count":true},{"user":"MYDan","repo":"mayi","type":"star","size":"small"}]},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":true,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":true},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"chart":{"type":"c3"},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"contact":"lijinfeng2011@gmail.com"},"title":"MYDan(mydan.org蚂蚁蛋运维助手)","links":{"sidebar":{"Home":"http://www.mydan.org"}},"gitbook":"*"},"file":{"path":"tools/go.md","mtime":"2020-07-16T10:11:39.171Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-04T06:04:59.583Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-versions-select/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ad/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-terminal/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
